@@ -254,7 +254,7 @@ public final class Genotype<G extends Gene<?, G>>
 		return new Genotype<>(_chromosomes.map(Factory::newInstance), _ngenes);
 	}
 
-	Genotype<G> newInstance(final ISeq<Chromosome<G>> chromosomes) {
+	public Genotype<G> newInstance(final ISeq<Chromosome<G>> chromosomes) {
 		return new Genotype<>(chromosomes, _ngenes);
 	}
 
